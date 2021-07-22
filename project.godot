@@ -1,0 +1,49 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+_global_script_classes=[  ]
+_global_script_class_icons={
+
+}
+
+[application]
+
+config/name="Word Count Tracker"
+run/main_scene="res://Resources/Scenes/WordCountTracker.tscn"
+config/icon="res://icon.png"
+
+[autoload]
+
+Global="*res://Resources/Scripts/Global.gd"
+GameMenu="*res://Resources/Scripts/GameMenu.gd"
+Button0="*res://Resources/Scripts/Button0.gd"
+Button1="*res://Resources/Scripts/Button1.gd"
+Button2="*res://Resources/Scripts/Button2.gd"
+Button3="*res://Resources/Scripts/Button3.gd"
+Button4="*res://Resources/Scripts/Button4.gd"
+Button5="*res://Resources/Scripts/Button5.gd"
+Button6="*res://Resources/Scripts/Button6.gd"
+SaveData="*res://Resources/Scripts/SaveData.gd"
+LoadData="*res://Resources/Scripts/LoadData.gd"
+ImportData="*res://Resources/Scripts/ImportData.gd"
+ExportData="*res://Resources/Scripts/ExportData.gd"
+EnterData="*res://Resources/Scripts/EnterData.gd"
+Charts="*res://Resources/Scripts/Charts.gd"
+
+[display]
+
+window/size/width=600
+
+[rendering]
+
+quality/driver/driver_name="GLES2"
+vram_compression/import_etc=true
+vram_compression/import_etc2=false
+environment/default_environment="res://default_env.tres"

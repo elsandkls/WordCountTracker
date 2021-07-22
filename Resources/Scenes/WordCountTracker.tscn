@@ -1,0 +1,226 @@
+[gd_scene load_steps=26 format=2]
+
+[ext_resource path="res://Resources/Scripts/WordCountTracker.gd" type="Script" id=1]
+[ext_resource path="res://Resources/Images/background.png" type="Texture" id=2]
+[ext_resource path="res://Resources/Scripts/Button6.gd" type="Script" id=3]
+[ext_resource path="res://Resources/Scripts/Button0.gd" type="Script" id=4]
+[ext_resource path="res://Resources/Scripts/Button1.gd" type="Script" id=5]
+[ext_resource path="res://Resources/Scripts/Button2.gd" type="Script" id=6]
+[ext_resource path="res://Resources/Scripts/Button3.gd" type="Script" id=7]
+[ext_resource path="res://Resources/Scripts/Button4.gd" type="Script" id=8]
+[ext_resource path="res://Resources/Scripts/Button5.gd" type="Script" id=9]
+
+[sub_resource type="DynamicFontData" id=1]
+font_path = "res://Resources/Fonts/volkhorn/VollkornBlack-gx2EE.otf"
+
+[sub_resource type="DynamicFont" id=2]
+size = 25
+font_data = SubResource( 1 )
+
+[sub_resource type="DynamicFontData" id=3]
+font_path = "res://Resources/Fonts/volkhorn/VollkornBlack-gx2EE.otf"
+
+[sub_resource type="DynamicFont" id=4]
+size = 20
+font_data = SubResource( 3 )
+
+[sub_resource type="DynamicFontData" id=5]
+font_path = "res://Resources/Fonts/volkhorn/VollkornBlack-gx2EE.otf"
+
+[sub_resource type="DynamicFont" id=6]
+size = 20
+font_data = SubResource( 5 )
+
+[sub_resource type="DynamicFontData" id=7]
+font_path = "res://Resources/Fonts/volkhorn/VollkornBlack-gx2EE.otf"
+
+[sub_resource type="DynamicFont" id=8]
+size = 20
+font_data = SubResource( 7 )
+
+[sub_resource type="DynamicFontData" id=9]
+font_path = "res://Resources/Fonts/volkhorn/VollkornBlack-gx2EE.otf"
+
+[sub_resource type="DynamicFont" id=10]
+size = 20
+font_data = SubResource( 9 )
+
+[sub_resource type="DynamicFontData" id=11]
+font_path = "res://Resources/Fonts/volkhorn/VollkornBlack-gx2EE.otf"
+
+[sub_resource type="DynamicFont" id=12]
+size = 20
+font_data = SubResource( 11 )
+
+[sub_resource type="DynamicFontData" id=13]
+font_path = "res://Resources/Fonts/volkhorn/VollkornBlack-gx2EE.otf"
+
+[sub_resource type="DynamicFont" id=14]
+size = 20
+font_data = SubResource( 13 )
+
+[sub_resource type="DynamicFontData" id=15]
+font_path = "res://Resources/Fonts/volkhorn/VollkornBlack-gx2EE.otf"
+
+[sub_resource type="DynamicFont" id=16]
+size = 20
+font_data = SubResource( 15 )
+
+[node name="WordCountTracker" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="TextureRect" type="TextureRect" parent="."]
+margin_right = 600.0
+margin_bottom = 600.0
+rect_min_size = Vector2( 600, 600 )
+texture = ExtResource( 2 )
+
+[node name="GameMenu_Control" type="Control" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 600, 600 )
+
+[node name="BG_GameMenu" type="TextureRect" parent="GameMenu_Control"]
+margin_right = 600.0
+margin_bottom = 600.0
+rect_min_size = Vector2( 600, 600 )
+texture = ExtResource( 2 )
+
+[node name="HBoxContainer" type="HBoxContainer" parent="GameMenu_Control"]
+editor/display_folded = true
+margin_right = 40.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 600, 200 )
+
+[node name="VBoxContainer" type="VBoxContainer" parent="GameMenu_Control/HBoxContainer"]
+margin_left = 150.0
+margin_right = 450.0
+margin_bottom = 323.0
+rect_min_size = Vector2( 300, 200 )
+
+[node name="RichTextLabel" type="RichTextLabel" parent="GameMenu_Control/HBoxContainer/VBoxContainer"]
+margin_right = 300.0
+margin_bottom = 50.0
+rect_min_size = Vector2( 300, 50 )
+custom_fonts/normal_font = SubResource( 2 )
+tab_size = 24
+text = "Word Count Tracker"
+scroll_active = false
+
+[node name="Button6" type="Button" parent="GameMenu_Control/HBoxContainer/VBoxContainer"]
+margin_top = 54.0
+margin_right = 300.0
+margin_bottom = 89.0
+custom_fonts/font = SubResource( 4 )
+text = "Enter Data"
+script = ExtResource( 3 )
+
+[node name="Button0" type="Button" parent="GameMenu_Control/HBoxContainer/VBoxContainer"]
+margin_top = 93.0
+margin_right = 300.0
+margin_bottom = 128.0
+custom_fonts/font = SubResource( 6 )
+text = "Charts"
+script = ExtResource( 4 )
+
+[node name="Button1" type="Button" parent="GameMenu_Control/HBoxContainer/VBoxContainer"]
+margin_top = 132.0
+margin_right = 300.0
+margin_bottom = 167.0
+custom_fonts/font = SubResource( 8 )
+text = "Load Data"
+script = ExtResource( 5 )
+
+[node name="Button2" type="Button" parent="GameMenu_Control/HBoxContainer/VBoxContainer"]
+margin_top = 171.0
+margin_right = 300.0
+margin_bottom = 206.0
+custom_fonts/font = SubResource( 10 )
+text = "Save Data"
+script = ExtResource( 6 )
+
+[node name="Button3" type="Button" parent="GameMenu_Control/HBoxContainer/VBoxContainer"]
+margin_top = 210.0
+margin_right = 300.0
+margin_bottom = 245.0
+custom_fonts/font = SubResource( 12 )
+text = "Import Data"
+script = ExtResource( 7 )
+
+[node name="Button4" type="Button" parent="GameMenu_Control/HBoxContainer/VBoxContainer"]
+margin_top = 249.0
+margin_right = 300.0
+margin_bottom = 284.0
+custom_fonts/font = SubResource( 14 )
+text = "Export Data"
+script = ExtResource( 8 )
+
+[node name="Button5" type="Button" parent="GameMenu_Control/HBoxContainer/VBoxContainer"]
+margin_top = 288.0
+margin_right = 300.0
+margin_bottom = 323.0
+custom_fonts/font = SubResource( 16 )
+text = "Quit"
+script = ExtResource( 9 )
+
+[node name="Charts_Control" type="Control" parent="."]
+visible = false
+margin_right = 40.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 600, 600 )
+
+[node name="BG_Charts" type="TextureRect" parent="Charts_Control"]
+margin_right = 600.0
+margin_bottom = 600.0
+rect_min_size = Vector2( 600, 600 )
+texture = ExtResource( 2 )
+
+[node name="EnterData_Control" type="Control" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+
+[node name="BG_EnterData" type="TextureRect" parent="EnterData_Control"]
+margin_right = 600.0
+margin_bottom = 600.0
+rect_min_size = Vector2( 600, 600 )
+texture = ExtResource( 2 )
+
+[node name="LoadData_Control" type="Control" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+
+[node name="BG_LoadData" type="TextureRect" parent="LoadData_Control"]
+margin_right = 600.0
+margin_bottom = 600.0
+rect_min_size = Vector2( 600, 600 )
+texture = ExtResource( 2 )
+
+[node name="SaveData_Control" type="Control" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+
+[node name="BG_SaveData" type="TextureRect" parent="SaveData_Control"]
+margin_right = 600.0
+margin_bottom = 600.0
+rect_min_size = Vector2( 600, 600 )
+texture = ExtResource( 2 )
+
+[node name="ImportData_Control" type="Control" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+
+[node name="BG_ImportData" type="TextureRect" parent="ImportData_Control"]
+margin_right = 600.0
+margin_bottom = 600.0
+rect_min_size = Vector2( 600, 600 )
+texture = ExtResource( 2 )
+
+[node name="ExportData_Control" type="Control" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+
+[node name="BG_ExportData" type="TextureRect" parent="ExportData_Control"]
+margin_right = 600.0
+margin_bottom = 600.0
+rect_min_size = Vector2( 600, 600 )
+texture = ExtResource( 2 )
