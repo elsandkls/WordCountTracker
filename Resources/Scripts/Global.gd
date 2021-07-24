@@ -1,6 +1,7 @@
 extends Node
  
-
+var debug = -99;
+var status = 0;
 #autoload 
 onready var Button0 = get_node("/root/Button0");
 onready var Button1 = get_node("/root/Button1");
@@ -16,6 +17,16 @@ onready var SaveData = get_node("/root/SaveData");
 onready var ImportData = get_node("/root/ImportData");
 onready var ExportData = get_node("/root/ExportData");
 onready var Charts = get_node("/root/Charts");  
+
+# Control Containers 
+onready var GetExportDataControl =  get_node("/root/WordCountTracker/ExportData_Control");
+onready var GetImportDataControl =  get_node("/root/WordCountTracker/ImportData_Control");
+onready var GetSaveDataControl =  get_node("/root/WordCountTracker/SaveData_Control");
+onready var GetLoadDataControl =  get_node("/root/WordCountTracker/LoadData_Control");
+onready var GetEnterDataControl =  get_node("/root/WordCountTracker/EnterData_Control");
+onready var GetChartDataControl =  get_node("/root/WordCountTracker/Charts_Control");
+onready var GetGameMenuControl =  get_node("/root/WordCountTracker/GameMenu_Control");
+
 
 ##### File Storage #####  
 var DataStorage;

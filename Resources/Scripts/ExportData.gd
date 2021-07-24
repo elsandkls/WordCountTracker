@@ -1,25 +1,26 @@
 extends Control
+# ExportData
 
 func _ready(): 
 	pass  
  
 func make_visible(): 
 	self.show();  
-	Global.GetGameMenuControl.show();	
+	Global.GetExportDataControl.show();	
 	var check = self.check_visiblity(); 	
 	if Global.debug > 0:
 		print ("Menu (self): ", self) 
-		print ("Menu (Global): ", Global.GetGameMenuControl )  
+		print ("Menu (Global): ", Global.GetExportDataControl )  
 		print ("make_visible check (self): ", check) 
 	pass 
 	
 func make_invisible():  
 	self.hide();	 
-	Global.GetGameMenuControl.hide();	
+	Global.GetExportDataControl.hide();	
 	var check = self.check_visiblity(); 
 	if Global.debug > 0:
 		print ("Menu (self): ", self) 
-		print ("Menu (Global): ", Global.GetGameMenuControl ) 
+		print ("Menu (Global): ", Global.GetExportDataControl ) 
 		print ("make_invisible check (self): ", check) 
 	pass  
 	

@@ -1,4 +1,5 @@
-extends Node
+extends Control
+# SaveData
 
 onready var Global = get_node("/root/Global");  
 
@@ -58,3 +59,29 @@ func loadFile( fileName):
 	file.close()
 	return content
 	
+func make_visible(): 
+	self.show();  
+	Global.GetSaveDataControl.show();	
+	var check = self.check_visiblity(); 	
+	if Global.debug > 0:
+		print ("Menu (self): ", self) 
+		print ("Menu (Global): ", Global.GetSaveDataControl )  
+		print ("make_visible check (self): ", check) 
+	pass 
+	
+func make_invisible():  
+	self.hide();	 
+	Global.GetSaveDataControl.hide();	
+	var check = self.check_visiblity(); 
+	if Global.debug > 0:
+		print ("Menu (self): ", self) 
+		print ("Menu (Global): ", Global.GetSaveDataControl ) 
+		print ("make_invisible check (self): ", check) 
+	pass  
+	
+func check_visiblity():
+	if self.visible:
+		return(1)
+	else:
+		return(0)
+	pass;

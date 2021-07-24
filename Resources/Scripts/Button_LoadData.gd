@@ -1,4 +1,5 @@
 extends Button
+# Button Load Data
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -9,6 +10,8 @@ func _on_tick():
 	Global.status = 0;  
 	pass;  
 	
-func _on_pressed_Button4():   
-	_on_tick(); 
+func _on_Button_LoadData_pressed():   	
+	Global.GameMenu.make_invisible();
+	Global.LoadData.make_visible();
 	pass; 
+ 

@@ -1,6 +1,6 @@
 extends Button
+# Button Export Data 
 
-# Called when the node enters the scene tree for the first time.
 func _ready():
 	pass # Replace with function body.
 
@@ -9,6 +9,7 @@ func _on_tick():
 	Global.status = 0;  
 	pass;  
 	
-func _on_pressed_Button6():   
-	_on_tick(); 
-	pass; 
+func _on_Button_ExportData_pressed():  
+	Global.GameMenu.make_invisible();
+	Global.ExportData.make_visible();  
+	pass;  

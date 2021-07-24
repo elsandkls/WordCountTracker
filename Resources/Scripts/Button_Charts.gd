@@ -1,8 +1,5 @@
 extends Button
-
-# Declare member variables here. Examples:
-# var a = 2
-# var b = "text"
+#Button Charts
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -14,12 +11,9 @@ func _ready():
 func _on_tick():    
 	#print("Buttons: _on_tick (start): minutes: ",Global.minutes);
 	Global.status = 0;  
-	pass; 
+	pass;  
 
-func _on_QuitButton_pressed():
-	get_tree().quit();
-	pass # Replace with function body.
-
-func _on_pressed_Button0():   
-	_on_tick(); 
-	pass; 
+func _on_Button_Charts_pressed():   
+	Global.GameMenu.make_invisible();
+	Global.Charts.make_visible();
+	pass;  

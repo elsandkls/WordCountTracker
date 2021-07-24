@@ -1,14 +1,15 @@
-[gd_scene load_steps=26 format=2]
+[gd_scene load_steps=63 format=2]
 
 [ext_resource path="res://Resources/Scripts/WordCountTracker.gd" type="Script" id=1]
 [ext_resource path="res://Resources/Images/background.png" type="Texture" id=2]
-[ext_resource path="res://Resources/Scripts/Button6.gd" type="Script" id=3]
-[ext_resource path="res://Resources/Scripts/Button0.gd" type="Script" id=4]
-[ext_resource path="res://Resources/Scripts/Button1.gd" type="Script" id=5]
-[ext_resource path="res://Resources/Scripts/Button2.gd" type="Script" id=6]
-[ext_resource path="res://Resources/Scripts/Button3.gd" type="Script" id=7]
-[ext_resource path="res://Resources/Scripts/Button4.gd" type="Script" id=8]
-[ext_resource path="res://Resources/Scripts/Button5.gd" type="Script" id=9]
+[ext_resource path="res://Resources/Scripts/Button_EnterData.gd" type="Script" id=3]
+[ext_resource path="res://Resources/Scripts/Button_Charts.gd" type="Script" id=4]
+[ext_resource path="res://Resources/Scripts/Button_LoadData.gd" type="Script" id=5]
+[ext_resource path="res://Resources/Scripts/Button_SaveData.gd" type="Script" id=6]
+[ext_resource path="res://Resources/Scripts/Button_ImportData.gd" type="Script" id=7]
+[ext_resource path="res://Resources/Scripts/Button_ExportData.gd" type="Script" id=8]
+[ext_resource path="res://Resources/Scripts/Quit_Button.gd" type="Script" id=9]
+[ext_resource path="res://Resources/Scripts/MainMenu_Button.gd" type="Script" id=10]
 
 [sub_resource type="DynamicFontData" id=1]
 font_path = "res://Resources/Fonts/volkhorn/VollkornBlack-gx2EE.otf"
@@ -66,6 +67,132 @@ font_path = "res://Resources/Fonts/volkhorn/VollkornBlack-gx2EE.otf"
 size = 20
 font_data = SubResource( 15 )
 
+[sub_resource type="DynamicFontData" id=17]
+font_path = "res://Resources/Fonts/volkhorn/VollkornBlack-gx2EE.otf"
+
+[sub_resource type="DynamicFont" id=18]
+size = 20
+font_data = SubResource( 17 )
+
+[sub_resource type="DynamicFontData" id=19]
+font_path = "res://Resources/Fonts/volkhorn/VollkornBlack-gx2EE.otf"
+
+[sub_resource type="DynamicFont" id=20]
+size = 20
+font_data = SubResource( 19 )
+
+[sub_resource type="DynamicFontData" id=21]
+font_path = "res://Resources/Fonts/volkhorn/VollkornBlack-gx2EE.otf"
+
+[sub_resource type="DynamicFont" id=22]
+size = 20
+font_data = SubResource( 21 )
+
+[sub_resource type="DynamicFontData" id=23]
+font_path = "res://Resources/Fonts/volkhorn/VollkornBlack-gx2EE.otf"
+
+[sub_resource type="DynamicFont" id=24]
+size = 20
+font_data = SubResource( 23 )
+
+[sub_resource type="DynamicFontData" id=25]
+font_path = "res://Resources/Fonts/volkhorn/VollkornBlack-gx2EE.otf"
+
+[sub_resource type="DynamicFont" id=26]
+size = 20
+font_data = SubResource( 25 )
+
+[sub_resource type="DynamicFontData" id=27]
+font_path = "res://Resources/Fonts/volkhorn/VollkornBlack-gx2EE.otf"
+
+[sub_resource type="DynamicFont" id=28]
+size = 20
+font_data = SubResource( 27 )
+
+[sub_resource type="DynamicFontData" id=29]
+font_path = "res://Resources/Fonts/volkhorn/VollkornBlack-gx2EE.otf"
+
+[sub_resource type="DynamicFont" id=30]
+size = 20
+font_data = SubResource( 29 )
+
+[sub_resource type="DynamicFontData" id=31]
+font_path = "res://Resources/Fonts/volkhorn/VollkornBlack-gx2EE.otf"
+
+[sub_resource type="DynamicFont" id=32]
+size = 20
+font_data = SubResource( 31 )
+
+[sub_resource type="DynamicFontData" id=33]
+font_path = "res://Resources/Fonts/volkhorn/VollkornBlack-gx2EE.otf"
+
+[sub_resource type="DynamicFont" id=34]
+size = 20
+font_data = SubResource( 33 )
+
+[sub_resource type="DynamicFontData" id=35]
+font_path = "res://Resources/Fonts/volkhorn/VollkornBlack-gx2EE.otf"
+
+[sub_resource type="DynamicFont" id=36]
+size = 20
+font_data = SubResource( 35 )
+
+[sub_resource type="DynamicFontData" id=37]
+font_path = "res://Resources/Fonts/volkhorn/VollkornBlack-gx2EE.otf"
+
+[sub_resource type="DynamicFont" id=38]
+size = 20
+font_data = SubResource( 37 )
+
+[sub_resource type="DynamicFontData" id=39]
+font_path = "res://Resources/Fonts/volkhorn/VollkornBlack-gx2EE.otf"
+
+[sub_resource type="DynamicFont" id=40]
+size = 20
+font_data = SubResource( 39 )
+
+[sub_resource type="DynamicFontData" id=41]
+font_path = "res://Resources/Fonts/volkhorn/VollkornBlack-gx2EE.otf"
+
+[sub_resource type="DynamicFont" id=42]
+size = 20
+font_data = SubResource( 41 )
+
+[sub_resource type="DynamicFontData" id=43]
+font_path = "res://Resources/Fonts/volkhorn/VollkornBlack-gx2EE.otf"
+
+[sub_resource type="DynamicFont" id=44]
+size = 20
+font_data = SubResource( 43 )
+
+[sub_resource type="DynamicFontData" id=45]
+font_path = "res://Resources/Fonts/volkhorn/VollkornBlack-gx2EE.otf"
+
+[sub_resource type="DynamicFont" id=46]
+size = 20
+font_data = SubResource( 45 )
+
+[sub_resource type="DynamicFontData" id=47]
+font_path = "res://Resources/Fonts/volkhorn/VollkornBlack-gx2EE.otf"
+
+[sub_resource type="DynamicFont" id=48]
+size = 20
+font_data = SubResource( 47 )
+
+[sub_resource type="DynamicFontData" id=49]
+font_path = "res://Resources/Fonts/volkhorn/VollkornBlack-gx2EE.otf"
+
+[sub_resource type="DynamicFont" id=50]
+size = 20
+font_data = SubResource( 49 )
+
+[sub_resource type="DynamicFontData" id=51]
+font_path = "res://Resources/Fonts/volkhorn/VollkornBlack-gx2EE.otf"
+
+[sub_resource type="DynamicFont" id=52]
+size = 20
+font_data = SubResource( 51 )
+
 [node name="WordCountTracker" type="Node2D"]
 script = ExtResource( 1 )
 
@@ -86,84 +213,93 @@ margin_bottom = 600.0
 rect_min_size = Vector2( 600, 600 )
 texture = ExtResource( 2 )
 
-[node name="HBoxContainer" type="HBoxContainer" parent="GameMenu_Control"]
-editor/display_folded = true
-margin_right = 40.0
-margin_bottom = 40.0
-rect_min_size = Vector2( 600, 200 )
+[node name="Header_GameMenu" type="HBoxContainer" parent="GameMenu_Control"]
+margin_right = 600.0
+margin_bottom = 50.0
+rect_min_size = Vector2( 600, 50 )
 
-[node name="VBoxContainer" type="VBoxContainer" parent="GameMenu_Control/HBoxContainer"]
-margin_left = 150.0
-margin_right = 450.0
-margin_bottom = 323.0
-rect_min_size = Vector2( 300, 200 )
-
-[node name="RichTextLabel" type="RichTextLabel" parent="GameMenu_Control/HBoxContainer/VBoxContainer"]
+[node name="Header_Position" type="VBoxContainer" parent="GameMenu_Control/Header_GameMenu"]
 margin_right = 300.0
 margin_bottom = 50.0
 rect_min_size = Vector2( 300, 50 )
+
+[node name="RichTextLabel" type="RichTextLabel" parent="GameMenu_Control/Header_GameMenu/Header_Position"]
+margin_right = 300.0
+margin_bottom = 30.0
+rect_min_size = Vector2( 300, 30 )
 custom_fonts/normal_font = SubResource( 2 )
 tab_size = 24
 text = "Word Count Tracker"
 scroll_active = false
 
-[node name="Button6" type="Button" parent="GameMenu_Control/HBoxContainer/VBoxContainer"]
-margin_top = 54.0
-margin_right = 300.0
-margin_bottom = 89.0
+[node name="HBoxContainer2" type="HBoxContainer" parent="GameMenu_Control"]
+margin_top = 50.0
+margin_right = 150.0
+margin_bottom = 550.0
+rect_min_size = Vector2( 150, 550 )
+
+[node name="VBoxContainer" type="VBoxContainer" parent="GameMenu_Control/HBoxContainer2"]
+margin_right = 150.0
+margin_bottom = 550.0
+rect_min_size = Vector2( 150, 200 )
+
+[node name="Button_EnterData" type="Button" parent="GameMenu_Control/HBoxContainer2/VBoxContainer"]
+margin_right = 150.0
+margin_bottom = 35.0
 custom_fonts/font = SubResource( 4 )
 text = "Enter Data"
 script = ExtResource( 3 )
 
-[node name="Button0" type="Button" parent="GameMenu_Control/HBoxContainer/VBoxContainer"]
-margin_top = 93.0
-margin_right = 300.0
-margin_bottom = 128.0
+[node name="Button_Charts" type="Button" parent="GameMenu_Control/HBoxContainer2/VBoxContainer"]
+margin_top = 39.0
+margin_right = 150.0
+margin_bottom = 74.0
 custom_fonts/font = SubResource( 6 )
 text = "Charts"
 script = ExtResource( 4 )
 
-[node name="Button1" type="Button" parent="GameMenu_Control/HBoxContainer/VBoxContainer"]
-margin_top = 132.0
-margin_right = 300.0
-margin_bottom = 167.0
+[node name="Button_LoadData" type="Button" parent="GameMenu_Control/HBoxContainer2/VBoxContainer"]
+margin_top = 78.0
+margin_right = 150.0
+margin_bottom = 113.0
 custom_fonts/font = SubResource( 8 )
 text = "Load Data"
 script = ExtResource( 5 )
 
-[node name="Button2" type="Button" parent="GameMenu_Control/HBoxContainer/VBoxContainer"]
-margin_top = 171.0
-margin_right = 300.0
-margin_bottom = 206.0
+[node name="Button_SaveData" type="Button" parent="GameMenu_Control/HBoxContainer2/VBoxContainer"]
+margin_top = 117.0
+margin_right = 150.0
+margin_bottom = 152.0
 custom_fonts/font = SubResource( 10 )
 text = "Save Data"
 script = ExtResource( 6 )
 
-[node name="Button3" type="Button" parent="GameMenu_Control/HBoxContainer/VBoxContainer"]
-margin_top = 210.0
-margin_right = 300.0
-margin_bottom = 245.0
+[node name="Button_ImportData" type="Button" parent="GameMenu_Control/HBoxContainer2/VBoxContainer"]
+margin_top = 156.0
+margin_right = 150.0
+margin_bottom = 191.0
 custom_fonts/font = SubResource( 12 )
 text = "Import Data"
 script = ExtResource( 7 )
 
-[node name="Button4" type="Button" parent="GameMenu_Control/HBoxContainer/VBoxContainer"]
-margin_top = 249.0
-margin_right = 300.0
-margin_bottom = 284.0
+[node name="Button_ExportData" type="Button" parent="GameMenu_Control/HBoxContainer2/VBoxContainer"]
+margin_top = 195.0
+margin_right = 150.0
+margin_bottom = 230.0
 custom_fonts/font = SubResource( 14 )
 text = "Export Data"
 script = ExtResource( 8 )
 
-[node name="Button5" type="Button" parent="GameMenu_Control/HBoxContainer/VBoxContainer"]
-margin_top = 288.0
-margin_right = 300.0
-margin_bottom = 323.0
+[node name="Quit_Button" type="Button" parent="GameMenu_Control/HBoxContainer2/VBoxContainer"]
+margin_top = 234.0
+margin_right = 150.0
+margin_bottom = 269.0
 custom_fonts/font = SubResource( 16 )
 text = "Quit"
 script = ExtResource( 9 )
 
 [node name="Charts_Control" type="Control" parent="."]
+editor/display_folded = true
 visible = false
 margin_right = 40.0
 margin_bottom = 40.0
@@ -175,7 +311,68 @@ margin_bottom = 600.0
 rect_min_size = Vector2( 600, 600 )
 texture = ExtResource( 2 )
 
+[node name="Header_Charts" type="HBoxContainer" parent="Charts_Control"]
+margin_right = 600.0
+margin_bottom = 50.0
+rect_min_size = Vector2( 600, 50 )
+
+[node name="Header_Position" type="VBoxContainer" parent="Charts_Control/Header_Charts"]
+margin_left = 150.0
+margin_right = 450.0
+margin_bottom = 50.0
+rect_min_size = Vector2( 300, 50 )
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Charts_Control/Header_Charts/Header_Position"]
+margin_right = 300.0
+margin_bottom = 30.0
+rect_min_size = Vector2( 300, 30 )
+custom_fonts/normal_font = SubResource( 2 )
+tab_size = 24
+text = "Word Count Tracker"
+scroll_active = false
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Charts_Control"]
+margin_top = 50.0
+margin_right = 130.0
+margin_bottom = 550.0
+rect_min_size = Vector2( 130, 500 )
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Charts_Control/HBoxContainer"]
+margin_right = 130.0
+margin_bottom = 500.0
+rect_min_size = Vector2( 130, 500 )
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Charts_Control/HBoxContainer/VBoxContainer"]
+margin_right = 130.0
+margin_bottom = 30.0
+grow_horizontal = 2
+rect_min_size = Vector2( 130, 30 )
+custom_fonts/normal_font = SubResource( 18 )
+tab_size = 6
+text = "Charts"
+scroll_active = false
+
+[node name="MainMenu_Button" type="Button" parent="Charts_Control/HBoxContainer/VBoxContainer"]
+margin_top = 34.0
+margin_right = 130.0
+margin_bottom = 69.0
+rect_min_size = Vector2( 130, 30 )
+custom_fonts/font = SubResource( 20 )
+text = "Main Menu"
+script = ExtResource( 10 )
+
+[node name="Quit_Button" type="Button" parent="Charts_Control/HBoxContainer/VBoxContainer"]
+margin_top = 73.0
+margin_right = 130.0
+margin_bottom = 108.0
+rect_min_size = Vector2( 130, 30 )
+custom_fonts/font = SubResource( 22 )
+text = "Quit"
+script = ExtResource( 9 )
+
 [node name="EnterData_Control" type="Control" parent="."]
+editor/display_folded = true
+visible = false
 margin_right = 40.0
 margin_bottom = 40.0
 
@@ -185,7 +382,64 @@ margin_bottom = 600.0
 rect_min_size = Vector2( 600, 600 )
 texture = ExtResource( 2 )
 
+[node name="Header_EnterData" type="HBoxContainer" parent="EnterData_Control"]
+margin_right = 600.0
+margin_bottom = 50.0
+rect_min_size = Vector2( 600, 50 )
+
+[node name="Header_Position" type="VBoxContainer" parent="EnterData_Control/Header_EnterData"]
+margin_left = 150.0
+margin_right = 450.0
+margin_bottom = 50.0
+rect_min_size = Vector2( 300, 50 )
+
+[node name="RichTextLabel" type="RichTextLabel" parent="EnterData_Control/Header_EnterData/Header_Position"]
+margin_right = 300.0
+margin_bottom = 30.0
+rect_min_size = Vector2( 300, 30 )
+custom_fonts/normal_font = SubResource( 2 )
+tab_size = 24
+text = "Word Count Tracker"
+scroll_active = false
+
+[node name="HBoxContainer" type="HBoxContainer" parent="EnterData_Control"]
+margin_top = 50.0
+margin_right = 100.0
+margin_bottom = 550.0
+rect_min_size = Vector2( 130, 500 )
+
+[node name="VBoxContainer" type="VBoxContainer" parent="EnterData_Control/HBoxContainer"]
+margin_right = 130.0
+margin_bottom = 500.0
+rect_min_size = Vector2( 130, 500 )
+
+[node name="RichTextLabel" type="RichTextLabel" parent="EnterData_Control/HBoxContainer/VBoxContainer"]
+margin_right = 130.0
+margin_bottom = 25.0
+rect_min_size = Vector2( 130, 25 )
+custom_fonts/normal_font = SubResource( 24 )
+text = "Enter Data"
+scroll_active = false
+
+[node name="MainMenu_Button" type="Button" parent="EnterData_Control/HBoxContainer/VBoxContainer"]
+margin_top = 54.0
+margin_right = 130.0
+margin_bottom = 89.0
+custom_fonts/font = SubResource( 26 )
+text = "Main Menu"
+script = ExtResource( 10 )
+
+[node name="Quit_Button" type="Button" parent="EnterData_Control/HBoxContainer/VBoxContainer"]
+margin_top = 93.0
+margin_right = 130.0
+margin_bottom = 128.0
+custom_fonts/font = SubResource( 28 )
+text = "Quit"
+script = ExtResource( 9 )
+
 [node name="LoadData_Control" type="Control" parent="."]
+editor/display_folded = true
+visible = false
 margin_right = 40.0
 margin_bottom = 40.0
 
@@ -195,7 +449,64 @@ margin_bottom = 600.0
 rect_min_size = Vector2( 600, 600 )
 texture = ExtResource( 2 )
 
+[node name="Header_LoadData" type="HBoxContainer" parent="LoadData_Control"]
+margin_right = 600.0
+margin_bottom = 50.0
+rect_min_size = Vector2( 600, 50 )
+
+[node name="Header_Position" type="VBoxContainer" parent="LoadData_Control/Header_LoadData"]
+margin_left = 150.0
+margin_right = 450.0
+margin_bottom = 50.0
+rect_min_size = Vector2( 300, 50 )
+
+[node name="RichTextLabel" type="RichTextLabel" parent="LoadData_Control/Header_LoadData/Header_Position"]
+margin_right = 300.0
+margin_bottom = 30.0
+rect_min_size = Vector2( 300, 30 )
+custom_fonts/normal_font = SubResource( 2 )
+tab_size = 24
+text = "Word Count Tracker"
+scroll_active = false
+
+[node name="HBoxContainer" type="HBoxContainer" parent="LoadData_Control"]
+margin_top = 50.0
+margin_right = 130.0
+margin_bottom = 98.0
+rect_min_size = Vector2( 130, 500 )
+
+[node name="VBoxContainer" type="VBoxContainer" parent="LoadData_Control/HBoxContainer"]
+margin_right = 130.0
+margin_bottom = 500.0
+rect_min_size = Vector2( 130, 500 )
+
+[node name="RichTextLabel" type="RichTextLabel" parent="LoadData_Control/HBoxContainer/VBoxContainer"]
+margin_right = 130.0
+margin_bottom = 25.0
+rect_min_size = Vector2( 130, 25 )
+custom_fonts/normal_font = SubResource( 30 )
+text = "Load Data"
+scroll_active = false
+
+[node name="MainMenu_Button" type="Button" parent="LoadData_Control/HBoxContainer/VBoxContainer"]
+margin_top = 29.0
+margin_right = 130.0
+margin_bottom = 64.0
+custom_fonts/font = SubResource( 32 )
+text = "Main Menu"
+script = ExtResource( 10 )
+
+[node name="Quit_Button" type="Button" parent="LoadData_Control/HBoxContainer/VBoxContainer"]
+margin_top = 68.0
+margin_right = 130.0
+margin_bottom = 103.0
+custom_fonts/font = SubResource( 34 )
+text = "Quit"
+script = ExtResource( 9 )
+
 [node name="SaveData_Control" type="Control" parent="."]
+editor/display_folded = true
+visible = false
 margin_right = 40.0
 margin_bottom = 40.0
 
@@ -205,7 +516,64 @@ margin_bottom = 600.0
 rect_min_size = Vector2( 600, 600 )
 texture = ExtResource( 2 )
 
+[node name="Header_SaveData" type="HBoxContainer" parent="SaveData_Control"]
+margin_right = 600.0
+margin_bottom = 50.0
+rect_min_size = Vector2( 600, 50 )
+
+[node name="Header_Position" type="VBoxContainer" parent="SaveData_Control/Header_SaveData"]
+margin_left = 150.0
+margin_right = 450.0
+margin_bottom = 50.0
+rect_min_size = Vector2( 300, 50 )
+
+[node name="RichTextLabel" type="RichTextLabel" parent="SaveData_Control/Header_SaveData/Header_Position"]
+margin_right = 300.0
+margin_bottom = 30.0
+rect_min_size = Vector2( 300, 30 )
+custom_fonts/normal_font = SubResource( 2 )
+tab_size = 24
+text = "Word Count Tracker"
+scroll_active = false
+
+[node name="HBoxContainer" type="HBoxContainer" parent="SaveData_Control"]
+margin_top = 50.0
+margin_right = 130.0
+margin_bottom = 550.0
+rect_min_size = Vector2( 130, 500 )
+
+[node name="VBoxContainer" type="VBoxContainer" parent="SaveData_Control/HBoxContainer"]
+margin_right = 130.0
+margin_bottom = 500.0
+rect_min_size = Vector2( 130, 500 )
+
+[node name="RichTextLabel" type="RichTextLabel" parent="SaveData_Control/HBoxContainer/VBoxContainer"]
+margin_right = 130.0
+margin_bottom = 25.0
+rect_min_size = Vector2( 130, 25 )
+custom_fonts/normal_font = SubResource( 36 )
+text = "Save Data"
+scroll_active = false
+
+[node name="MainMenu_Button" type="Button" parent="SaveData_Control/HBoxContainer/VBoxContainer"]
+margin_top = 29.0
+margin_right = 130.0
+margin_bottom = 64.0
+custom_fonts/font = SubResource( 38 )
+text = "Main Menu"
+script = ExtResource( 10 )
+
+[node name="Quit_Button" type="Button" parent="SaveData_Control/HBoxContainer/VBoxContainer"]
+margin_top = 68.0
+margin_right = 130.0
+margin_bottom = 103.0
+custom_fonts/font = SubResource( 40 )
+text = "Quit"
+script = ExtResource( 9 )
+
 [node name="ImportData_Control" type="Control" parent="."]
+editor/display_folded = true
+visible = false
 margin_right = 40.0
 margin_bottom = 40.0
 
@@ -215,7 +583,64 @@ margin_bottom = 600.0
 rect_min_size = Vector2( 600, 600 )
 texture = ExtResource( 2 )
 
+[node name="Header_ImportData" type="HBoxContainer" parent="ImportData_Control"]
+margin_right = 600.0
+margin_bottom = 50.0
+rect_min_size = Vector2( 600, 50 )
+
+[node name="Header_Position" type="VBoxContainer" parent="ImportData_Control/Header_ImportData"]
+margin_left = 150.0
+margin_right = 450.0
+margin_bottom = 50.0
+rect_min_size = Vector2( 300, 50 )
+
+[node name="RichTextLabel" type="RichTextLabel" parent="ImportData_Control/Header_ImportData/Header_Position"]
+margin_right = 300.0
+margin_bottom = 30.0
+rect_min_size = Vector2( 300, 30 )
+custom_fonts/normal_font = SubResource( 2 )
+tab_size = 24
+text = "Word Count Tracker"
+scroll_active = false
+
+[node name="HBoxContainer" type="HBoxContainer" parent="ImportData_Control"]
+margin_top = 50.0
+margin_right = 130.0
+margin_bottom = 550.0
+rect_min_size = Vector2( 130, 500 )
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ImportData_Control/HBoxContainer"]
+margin_right = 130.0
+margin_bottom = 500.0
+rect_min_size = Vector2( 130, 500 )
+
+[node name="RichTextLabel" type="RichTextLabel" parent="ImportData_Control/HBoxContainer/VBoxContainer"]
+margin_right = 130.0
+margin_bottom = 25.0
+rect_min_size = Vector2( 130, 25 )
+custom_fonts/normal_font = SubResource( 42 )
+text = "Import Data"
+scroll_active = false
+
+[node name="MainMenu_Button" type="Button" parent="ImportData_Control/HBoxContainer/VBoxContainer"]
+margin_top = 29.0
+margin_right = 130.0
+margin_bottom = 64.0
+custom_fonts/font = SubResource( 44 )
+text = "Main Menu"
+script = ExtResource( 10 )
+
+[node name="Quit_Button" type="Button" parent="ImportData_Control/HBoxContainer/VBoxContainer"]
+margin_top = 68.0
+margin_right = 130.0
+margin_bottom = 103.0
+custom_fonts/font = SubResource( 46 )
+text = "Quit"
+script = ExtResource( 9 )
+
 [node name="ExportData_Control" type="Control" parent="."]
+editor/display_folded = true
+visible = false
 margin_right = 40.0
 margin_bottom = 40.0
 
@@ -224,3 +649,77 @@ margin_right = 600.0
 margin_bottom = 600.0
 rect_min_size = Vector2( 600, 600 )
 texture = ExtResource( 2 )
+
+[node name="Header_ExportData" type="HBoxContainer" parent="ExportData_Control"]
+margin_right = 600.0
+margin_bottom = 50.0
+rect_min_size = Vector2( 600, 50 )
+
+[node name="Header_Position" type="VBoxContainer" parent="ExportData_Control/Header_ExportData"]
+margin_left = 150.0
+margin_right = 450.0
+margin_bottom = 50.0
+rect_min_size = Vector2( 300, 50 )
+
+[node name="RichTextLabel" type="RichTextLabel" parent="ExportData_Control/Header_ExportData/Header_Position"]
+margin_right = 300.0
+margin_bottom = 30.0
+rect_min_size = Vector2( 300, 30 )
+custom_fonts/normal_font = SubResource( 2 )
+tab_size = 24
+text = "Word Count Tracker"
+scroll_active = false
+
+[node name="HBoxContainer" type="HBoxContainer" parent="ExportData_Control"]
+margin_top = 50.0
+margin_right = 40.0
+margin_bottom = 98.0
+rect_min_size = Vector2( 130, 500 )
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ExportData_Control/HBoxContainer"]
+margin_right = 130.0
+margin_bottom = 500.0
+rect_min_size = Vector2( 130, 500 )
+
+[node name="RichTextLabel" type="RichTextLabel" parent="ExportData_Control/HBoxContainer/VBoxContainer"]
+margin_right = 130.0
+margin_bottom = 25.0
+rect_min_size = Vector2( 130, 25 )
+custom_fonts/normal_font = SubResource( 48 )
+text = "Export Data"
+scroll_active = false
+
+[node name="MainMenu_Button" type="Button" parent="ExportData_Control/HBoxContainer/VBoxContainer"]
+margin_top = 29.0
+margin_right = 130.0
+margin_bottom = 64.0
+custom_fonts/font = SubResource( 50 )
+text = "Main Menu"
+script = ExtResource( 10 )
+
+[node name="Quit_Button" type="Button" parent="ExportData_Control/HBoxContainer/VBoxContainer"]
+margin_top = 68.0
+margin_right = 130.0
+margin_bottom = 103.0
+custom_fonts/font = SubResource( 52 )
+text = "Quit"
+script = ExtResource( 9 )
+[connection signal="pressed" from="GameMenu_Control/HBoxContainer2/VBoxContainer/Button_EnterData" to="GameMenu_Control/HBoxContainer2/VBoxContainer/Button_EnterData" method="_on_Button_EnterData_pressed"]
+[connection signal="pressed" from="GameMenu_Control/HBoxContainer2/VBoxContainer/Button_Charts" to="GameMenu_Control/HBoxContainer2/VBoxContainer/Button_Charts" method="_on_Button_Charts_pressed"]
+[connection signal="pressed" from="GameMenu_Control/HBoxContainer2/VBoxContainer/Button_LoadData" to="GameMenu_Control/HBoxContainer2/VBoxContainer/Button_LoadData" method="_on_Button_LoadData_pressed"]
+[connection signal="pressed" from="GameMenu_Control/HBoxContainer2/VBoxContainer/Button_SaveData" to="GameMenu_Control/HBoxContainer2/VBoxContainer/Button_SaveData" method="_on_Button_SaveData_pressed"]
+[connection signal="pressed" from="GameMenu_Control/HBoxContainer2/VBoxContainer/Button_ImportData" to="GameMenu_Control/HBoxContainer2/VBoxContainer/Button_ImportData" method="_on_Button_ImportData_pressed"]
+[connection signal="pressed" from="GameMenu_Control/HBoxContainer2/VBoxContainer/Button_ExportData" to="GameMenu_Control/HBoxContainer2/VBoxContainer/Button_ExportData" method="_on_Button_ExportData_pressed"]
+[connection signal="pressed" from="GameMenu_Control/HBoxContainer2/VBoxContainer/Quit_Button" to="GameMenu_Control/HBoxContainer2/VBoxContainer/Quit_Button" method="_on_Quit_Button_pressed"]
+[connection signal="pressed" from="Charts_Control/HBoxContainer/VBoxContainer/MainMenu_Button" to="Charts_Control/HBoxContainer/VBoxContainer/MainMenu_Button" method="_on_MainMenu_Button_pressed"]
+[connection signal="pressed" from="Charts_Control/HBoxContainer/VBoxContainer/Quit_Button" to="Charts_Control/HBoxContainer/VBoxContainer/Quit_Button" method="_on_Quit_Button_pressed"]
+[connection signal="pressed" from="EnterData_Control/HBoxContainer/VBoxContainer/MainMenu_Button" to="EnterData_Control/HBoxContainer/VBoxContainer/MainMenu_Button" method="_on_MainMenu_Button_pressed"]
+[connection signal="pressed" from="EnterData_Control/HBoxContainer/VBoxContainer/Quit_Button" to="EnterData_Control/HBoxContainer/VBoxContainer/Quit_Button" method="_on_Quit_Button_pressed"]
+[connection signal="pressed" from="LoadData_Control/HBoxContainer/VBoxContainer/MainMenu_Button" to="LoadData_Control/HBoxContainer/VBoxContainer/MainMenu_Button" method="_on_MainMenu_Button_pressed"]
+[connection signal="pressed" from="LoadData_Control/HBoxContainer/VBoxContainer/Quit_Button" to="LoadData_Control/HBoxContainer/VBoxContainer/Quit_Button" method="_on_Quit_Button_pressed"]
+[connection signal="pressed" from="SaveData_Control/HBoxContainer/VBoxContainer/MainMenu_Button" to="SaveData_Control/HBoxContainer/VBoxContainer/MainMenu_Button" method="_on_MainMenu_Button_pressed"]
+[connection signal="pressed" from="SaveData_Control/HBoxContainer/VBoxContainer/Quit_Button" to="SaveData_Control/HBoxContainer/VBoxContainer/Quit_Button" method="_on_Quit_Button_pressed"]
+[connection signal="pressed" from="ImportData_Control/HBoxContainer/VBoxContainer/MainMenu_Button" to="ImportData_Control/HBoxContainer/VBoxContainer/MainMenu_Button" method="_on_MainMenu_Button_pressed"]
+[connection signal="pressed" from="ImportData_Control/HBoxContainer/VBoxContainer/Quit_Button" to="ImportData_Control/HBoxContainer/VBoxContainer/Quit_Button" method="_on_Quit_Button_pressed"]
+[connection signal="pressed" from="ExportData_Control/HBoxContainer/VBoxContainer/MainMenu_Button" to="ExportData_Control/HBoxContainer/VBoxContainer/MainMenu_Button" method="_on_MainMenu_Button_pressed"]
+[connection signal="pressed" from="ExportData_Control/HBoxContainer/VBoxContainer/Quit_Button" to="ExportData_Control/HBoxContainer/VBoxContainer/Quit_Button" method="_on_Quit_Button_pressed"]

@@ -1,25 +1,26 @@
 extends Control
+# LoadData
 
 func _ready(): 
 	pass  
  
 func make_visible(): 
 	self.show();  
-	Global.GetGameMenuControl.show();	
+	Global.GetLoadDataControl.show();	
 	var check = self.check_visiblity(); 	
 	if Global.debug > 0:
 		print ("Menu (self): ", self) 
-		print ("Menu (Global): ", Global.GetGameMenuControl )  
+		print ("Menu (Global): ", Global.GetLoadDataControl )  
 		print ("make_visible check (self): ", check) 
 	pass 
 	
 func make_invisible():  
 	self.hide();	 
-	Global.GetGameMenuControl.hide();	
+	Global.GetLoadDataControl.hide();	
 	var check = self.check_visiblity(); 
 	if Global.debug > 0:
 		print ("Menu (self): ", self) 
-		print ("Menu (Global): ", Global.GetGameMenuControl ) 
+		print ("Menu (Global): ", Global.GetLoadDataControl ) 
 		print ("make_invisible check (self): ", check) 
 	pass  
 	
