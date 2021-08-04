@@ -203,6 +203,8 @@ rect_min_size = Vector2( 600, 600 )
 texture = ExtResource( 2 )
 
 [node name="GameMenu_Control" type="Control" parent="."]
+editor/display_folded = true
+visible = false
 margin_right = 40.0
 margin_bottom = 40.0
 rect_min_size = Vector2( 600, 600 )
@@ -233,6 +235,7 @@ text = "Word Count Tracker"
 scroll_active = false
 
 [node name="HBoxContainer2" type="HBoxContainer" parent="GameMenu_Control"]
+editor/display_folded = true
 margin_top = 50.0
 margin_right = 150.0
 margin_bottom = 550.0
@@ -297,6 +300,20 @@ margin_bottom = 269.0
 custom_fonts/font = SubResource( 16 )
 text = "Quit"
 script = ExtResource( 9 )
+
+[node name="Body_EnterData2" type="HBoxContainer" parent="GameMenu_Control"]
+margin_left = 145.0
+margin_top = 65.0
+margin_right = 595.0
+margin_bottom = 485.0
+rect_min_size = Vector2( 450, 420 )
+
+[node name="Footer_EnterData2" type="HBoxContainer" parent="GameMenu_Control"]
+margin_left = 5.0
+margin_top = 555.0
+margin_right = 605.0
+margin_bottom = 605.0
+rect_min_size = Vector2( 600, 50 )
 
 [node name="Charts_Control" type="Control" parent="."]
 editor/display_folded = true
@@ -370,26 +387,42 @@ custom_fonts/font = SubResource( 22 )
 text = "Quit"
 script = ExtResource( 9 )
 
+[node name="Body_EnterData2" type="HBoxContainer" parent="Charts_Control"]
+margin_left = 145.0
+margin_top = 65.0
+margin_right = 595.0
+margin_bottom = 485.0
+rect_min_size = Vector2( 450, 420 )
+
+[node name="Footer_EnterData2" type="HBoxContainer" parent="Charts_Control"]
+margin_left = 5.0
+margin_top = 555.0
+margin_right = 605.0
+margin_bottom = 605.0
+rect_min_size = Vector2( 600, 50 )
+
 [node name="EnterData_Control" type="Control" parent="."]
-editor/display_folded = true
-visible = false
-margin_right = 40.0
-margin_bottom = 40.0
+margin_left = 5.0
+margin_top = 5.0
+margin_right = 595.0
+margin_bottom = 595.0
+rect_min_size = Vector2( 590, 590 )
 
 [node name="BG_EnterData" type="TextureRect" parent="EnterData_Control"]
 margin_right = 600.0
 margin_bottom = 600.0
-rect_min_size = Vector2( 600, 600 )
+rect_min_size = Vector2( 590, 590 )
 texture = ExtResource( 2 )
+stretch_mode = 1
 
 [node name="Header_EnterData" type="HBoxContainer" parent="EnterData_Control"]
-margin_right = 600.0
+editor/display_folded = true
+margin_right = 590.0
 margin_bottom = 50.0
-rect_min_size = Vector2( 600, 50 )
+rect_min_size = Vector2( 590, 50 )
 
 [node name="Header_Position" type="VBoxContainer" parent="EnterData_Control/Header_EnterData"]
-margin_left = 150.0
-margin_right = 450.0
+margin_right = 300.0
 margin_bottom = 50.0
 rect_min_size = Vector2( 300, 50 )
 
@@ -403,14 +436,15 @@ text = "Word Count Tracker"
 scroll_active = false
 
 [node name="HBoxContainer" type="HBoxContainer" parent="EnterData_Control"]
+editor/display_folded = true
 margin_top = 50.0
 margin_right = 100.0
 margin_bottom = 550.0
-rect_min_size = Vector2( 130, 500 )
+rect_min_size = Vector2( 130, 540 )
 
 [node name="VBoxContainer" type="VBoxContainer" parent="EnterData_Control/HBoxContainer"]
 margin_right = 130.0
-margin_bottom = 500.0
+margin_bottom = 540.0
 rect_min_size = Vector2( 130, 500 )
 
 [node name="RichTextLabel" type="RichTextLabel" parent="EnterData_Control/HBoxContainer/VBoxContainer"]
@@ -422,20 +456,36 @@ text = "Enter Data"
 scroll_active = false
 
 [node name="MainMenu_Button" type="Button" parent="EnterData_Control/HBoxContainer/VBoxContainer"]
-margin_top = 54.0
+margin_top = 29.0
 margin_right = 130.0
-margin_bottom = 89.0
+margin_bottom = 64.0
 custom_fonts/font = SubResource( 26 )
 text = "Main Menu"
 script = ExtResource( 10 )
 
 [node name="Quit_Button" type="Button" parent="EnterData_Control/HBoxContainer/VBoxContainer"]
-margin_top = 93.0
+margin_top = 68.0
 margin_right = 130.0
-margin_bottom = 128.0
+margin_bottom = 103.0
 custom_fonts/font = SubResource( 28 )
 text = "Quit"
 script = ExtResource( 9 )
+
+[node name="Body_EnterData" type="HBoxContainer" parent="EnterData_Control"]
+margin_left = 140.0
+margin_top = 60.0
+margin_right = 590.0
+margin_bottom = 480.0
+rect_min_size = Vector2( 450, 420 )
+
+[node name="TextEdit" type="TextEdit" parent="EnterData_Control/Body_EnterData"]
+margin_bottom = 420.0
+
+[node name="Footer_EnterData" type="HBoxContainer" parent="EnterData_Control"]
+margin_top = 550.0
+margin_right = 600.0
+margin_bottom = 600.0
+rect_min_size = Vector2( 600, 50 )
 
 [node name="LoadData_Control" type="Control" parent="."]
 editor/display_folded = true
@@ -504,6 +554,20 @@ custom_fonts/font = SubResource( 34 )
 text = "Quit"
 script = ExtResource( 9 )
 
+[node name="Footer_EnterData2" type="HBoxContainer" parent="LoadData_Control"]
+margin_left = 5.0
+margin_top = 555.0
+margin_right = 605.0
+margin_bottom = 605.0
+rect_min_size = Vector2( 600, 50 )
+
+[node name="Body_EnterData2" type="HBoxContainer" parent="LoadData_Control"]
+margin_left = 145.0
+margin_top = 65.0
+margin_right = 595.0
+margin_bottom = 485.0
+rect_min_size = Vector2( 450, 420 )
+
 [node name="SaveData_Control" type="Control" parent="."]
 editor/display_folded = true
 visible = false
@@ -570,6 +634,20 @@ margin_bottom = 103.0
 custom_fonts/font = SubResource( 40 )
 text = "Quit"
 script = ExtResource( 9 )
+
+[node name="Body_EnterData2" type="HBoxContainer" parent="SaveData_Control"]
+margin_left = 145.0
+margin_top = 65.0
+margin_right = 595.0
+margin_bottom = 485.0
+rect_min_size = Vector2( 450, 420 )
+
+[node name="Footer_EnterData2" type="HBoxContainer" parent="SaveData_Control"]
+margin_left = 5.0
+margin_top = 555.0
+margin_right = 605.0
+margin_bottom = 605.0
+rect_min_size = Vector2( 600, 50 )
 
 [node name="ImportData_Control" type="Control" parent="."]
 editor/display_folded = true
@@ -638,11 +716,26 @@ custom_fonts/font = SubResource( 46 )
 text = "Quit"
 script = ExtResource( 9 )
 
+[node name="Body_EnterData2" type="HBoxContainer" parent="ImportData_Control"]
+margin_left = 145.0
+margin_top = 65.0
+margin_right = 595.0
+margin_bottom = 485.0
+rect_min_size = Vector2( 450, 420 )
+
+[node name="Footer_EnterData2" type="HBoxContainer" parent="ImportData_Control"]
+margin_left = 5.0
+margin_top = 555.0
+margin_right = 605.0
+margin_bottom = 605.0
+rect_min_size = Vector2( 600, 50 )
+
 [node name="ExportData_Control" type="Control" parent="."]
 editor/display_folded = true
 visible = false
 margin_right = 40.0
 margin_bottom = 40.0
+rect_min_size = Vector2( 600, 600 )
 
 [node name="BG_ExportData" type="TextureRect" parent="ExportData_Control"]
 margin_right = 600.0
@@ -656,8 +749,7 @@ margin_bottom = 50.0
 rect_min_size = Vector2( 600, 50 )
 
 [node name="Header_Position" type="VBoxContainer" parent="ExportData_Control/Header_ExportData"]
-margin_left = 150.0
-margin_right = 450.0
+margin_right = 300.0
 margin_bottom = 50.0
 rect_min_size = Vector2( 300, 50 )
 
@@ -704,6 +796,20 @@ margin_bottom = 103.0
 custom_fonts/font = SubResource( 52 )
 text = "Quit"
 script = ExtResource( 9 )
+
+[node name="Body_EnterData2" type="HBoxContainer" parent="ExportData_Control"]
+margin_left = 145.0
+margin_top = 65.0
+margin_right = 595.0
+margin_bottom = 485.0
+rect_min_size = Vector2( 450, 420 )
+
+[node name="Footer_EnterData2" type="HBoxContainer" parent="ExportData_Control"]
+margin_left = 5.0
+margin_top = 555.0
+margin_right = 605.0
+margin_bottom = 605.0
+rect_min_size = Vector2( 600, 50 )
 [connection signal="pressed" from="GameMenu_Control/HBoxContainer2/VBoxContainer/Button_EnterData" to="GameMenu_Control/HBoxContainer2/VBoxContainer/Button_EnterData" method="_on_Button_EnterData_pressed"]
 [connection signal="pressed" from="GameMenu_Control/HBoxContainer2/VBoxContainer/Button_Charts" to="GameMenu_Control/HBoxContainer2/VBoxContainer/Button_Charts" method="_on_Button_Charts_pressed"]
 [connection signal="pressed" from="GameMenu_Control/HBoxContainer2/VBoxContainer/Button_LoadData" to="GameMenu_Control/HBoxContainer2/VBoxContainer/Button_LoadData" method="_on_Button_LoadData_pressed"]
